@@ -1,4 +1,4 @@
-# Selenium Java Framework Basic concepts
+# Selenium Java Framework Concepts
 
 1) Handle Shadow DOM elements
 - Shadow DOM elements in the HTML DOM structure under tagname "#shadow-root"
