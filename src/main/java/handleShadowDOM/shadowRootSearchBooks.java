@@ -6,14 +6,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class shadowRootSearchBooks {
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 
 		driver.get("https://books-pwakit.appspot.com/");
