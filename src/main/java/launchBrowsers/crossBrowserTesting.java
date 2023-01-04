@@ -7,14 +7,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
-public class crossBrowserTesting {
+public class CrossBrowserTesting {
 	public static void main(String[] args) {
-		String browser = "Firefox";
+		String browser = "Chrome";
 		WebDriver driver;
 		switch(browser) {
-		case "Chrome":
-			driver = new ChromeDriver();
-			break;
 		case "Edge":
 			driver = new EdgeDriver();
 			break;
@@ -30,7 +27,7 @@ public class crossBrowserTesting {
 		default:
 			driver = new ChromeDriver();
 		}	
-		driver.navigate().to("https://www.udemy.com/");
+		driver.navigate().to("https://medium.com/tag/selenium");
 		System.out.println(driver.getTitle());
 		driver.quit();
 	}
