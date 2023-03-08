@@ -9,25 +9,25 @@ import org.openqa.selenium.safari.SafariDriver;
 
 public class CrossBrowserTesting {
 	public static void main(String[] args) {
-		String browser = "Chrome";
+		String browser = "Edge";
 		WebDriver driver;
-		switch(browser) {
-		case "Edge":
+		switch(browser.toUpperCase()) {
+		case "EDGE":
 			driver = new EdgeDriver();
 			break;
-		case "Firefox":
+		case "FIREFOX":
 			driver = new FirefoxDriver();
 			break;
-		case "Safari":
+		case "SAFARI":
 			driver = new SafariDriver();
 			break;
-		case "IEDriver":
+		case "IEDRIVER":
 			driver = new InternetExplorerDriver();
 			break;
 		default:
 			driver = new ChromeDriver();
 		}	
-		driver.navigate().to("https://medium.com/tag/selenium");
+		driver.navigate().to("https://www.youtube.com/@swaroopnadella");
 		System.out.println(driver.getTitle());
 		driver.quit();
 	}
